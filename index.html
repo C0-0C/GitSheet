@@ -1,12 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>GitSheet Replicate</title>
+  </head>
+  <body>
+    <div id="container">
+      <header id="top">
+        <h1>💻 GitSheet</h1>
+        <p>
+          A dead simple git cheatsheet.
+          <a href="https://twitter.com/tiivik">Follow @tiivik</a> for updates!
+        </p>
+      </header>
+      <main>
+        <table>
+          <thead>
+            <tr class="category">
+              <th>BRANCHES.</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="list-title"><code type="text">git branch</code></th>
+              <td>List all local branches.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="list-title"><code type="text">git branch -a</code></th>
+              <td>List remote and local branches.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="list-title">
+                <code type="text">git checkout -b branch_name</code>
+              </th>
+              <td>Create a local branch and switch to it.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="list-title">
+                <code type="text">git checkout branch_name</code>
+              </th>
+              <td>Switch to an existing branch.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="list-title">
+                <code type="text">git push origin branch_name</code>
+              </th>
+              <td>Push branch to remote.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="list-title">
+                <code type="text">git branch -m new_name</code>
+              </th>
+              <td>Rename current branch.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="list-title">
+                <code type="text">git branch -d branch_name</code>
+              </th>
+              <td>Delete a local branch.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="list-title">
+                <code type="text">git push origin :branch_name</code>
+              </th>
+              <td>Delete a remote branch.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr class="category">
+              <th>LOGS.</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="list-title">
+                <code type="text">git log --oneline</code>
+              </th>
+              <td>Show commit history in single lines.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="list-title"><code type="text">git log -2</code></th>
+              <td>Show commit history for last N commits.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="list-title"><code type="text">git log -p -2</code></th>
+              <td>Show commit history for last N commits with diff.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="list-title"><code type="text">git diff</code></th>
+              <td>Show all local file changes in the working tree.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="list-title">
+                <code type="text">git diff myfile</code>
+              </th>
+              <td>Show changes made to a file.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="list-title">
+                <code type="text">git blame myfile</code>
+              </th>
+              <td>Show who changed what & when in a file.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="list-title">
+                <code type="text">git remote show origin</code>
+              </th>
+              <td>Show remote branches and their mapping to local.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr class="category">
+              <th>CLEANUP.</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="list-title"><code type="text">git clean -f</code></th>
+              <td>Delete all untracked files.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="list-title"><code type="text">git clean -df</code></th>
+              <td>Delete all untracked files and directories.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="list-title">
+                <code type="text">git checkout -- .</code>
+              </th>
+              <td>Undo local modifications to all files.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="list-title">
+                <code type="text">git reset HEAD myfile</code>
+              </th>
+              <td>Unstage a file.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr class="category">
+              <th>TAGS.</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="list-title">
+                <code type="text">git pull --tags</code>
+              </th>
+              <td>Get remote tags.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="list-title">
+                <code type="text">git checkout tag_name</code>
+              </th>
+              <td>Switch to an existing tag.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="list-title"><code type="text">git tag</code></th>
+              <td>List all tags.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="list-title">
+                <code type="text">git tag -a tag_name -m "tag message"</code>
+              </th>
+              <td>Create a new tag.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="list-title">
+                <code type="text">git push --tags</code>
+              </th>
+              <td>Push all tags to remote repo.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr class="category">
+              <th>STASHES.</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="list-title">
+                <code type="text">Save changes to a stash.</code>
+              </th>
+              <td>Push all tags to remote repo.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="list-title">
+                <code type="text">git stash list</code>
+              </th>
+              <td>List all stashes.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+            <tr>
+              <th class="list-title"><code type="text">git stash pop</code></th>
+              <td>Apply a stash and delete it from stash list.</td>
+              <td>
+                <input
+                  type="button"
+                  name="git branch"
+                  value="Copy"
+                  class="list-btn"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+      <footer>
+        <p>
+          👋 Say hi! <a href="https://twitter.com/tiivik">@tiivik</a> or
+          <a href="https://www.buymeacoffee.com/NscyVhWZG"
+            >buy me a coffee ☕️.</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>
